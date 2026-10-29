@@ -651,7 +651,7 @@
   }
   function askTextHTML(s) {
     var out = '', list = false;
-    str(s).split('\n').forEach(function (ln) {
+    str(s).replace(/\*\*([^*\n]+)\*\*/g, '$1').split('\n').forEach(function (ln) {
       var m = /^\s*(?:[-•*]|\d+\.)\s+(.*)$/.exec(ln);
       if (m) { if (!list) { out += '<ul>'; list = true; } out += '<li>' + esc(m[1]) + '</li>'; return; }
       if (list) { out += '</ul>'; list = false; }
