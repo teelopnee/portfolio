@@ -21,7 +21,7 @@ window.PORTFOLIO_DATA = {
     "website": ""
   },
   "ai": {
-    "endpoint": ""
+    "endpoint": "https://portfolio-ai.teelopnee.workers.dev"
   },
   "items": [
     {
