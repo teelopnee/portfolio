@@ -1,6 +1,6 @@
 window.PORTFOLIO_DATA = {
   "v": 1,
-  "updatedAt": "2026-10-30",
+  "updatedAt": "2026-11-01",
   "profile": {
     "name": "Notchuda Wongthongsirichai",
     "headline": {
@@ -66,6 +66,95 @@ window.PORTFOLIO_DATA = {
         "images/w-jaew-2.jpg"
       ],
       "clip": "images/w-jaew-clip.mp4"
+    },
+    {
+      "featured": false,
+      "org": "",
+      "people": "",
+      "credId": "",
+      "color": "",
+      "metrics": [],
+      "links": [],
+      "id": "w-banter",
+      "cat": "app",
+      "title": {
+        "th": "แม่ค้าไม่ยอม",
+        "en": "Banter with Merchants"
+      },
+      "role": {
+        "th": "ออกแบบและพัฒนา",
+        "en": "Design and build"
+      },
+      "summary": {
+        "th": "เกมแชทต่อราคากับแม่ค้า AI 5 ร้านในตลาดนัดกลางคืน แต่ละร้านมีนิสัยต่างกัน ต่อให้ได้ถูกที่สุดแล้วแข่งกันบนกระดานอันดับรายวัน พิมพ์หรือคุยด้วยเสียงก็ได้",
+        "en": "A chat game where you haggle with five AI merchants at a Thai night market. Each has their own personality; talk them down and compete on a daily leaderboard, by typing or by voice."
+      },
+      "details": {
+        "th": "• แม่ค้า 5 คน 5 นิสัย ใจอ่อนและโมโหคนละเรื่อง เช่น ป้าศรีใจอ่อนเมื่อโดนชม ส่วนยายจันทร์จำทุกคำและจับได้ถ้าโกหก\n• ราคาตัดสินโดย server ไม่ใช่ AI: ห้ามต่ำกว่าทุน จำกัดการลดต่อข้อความ และตรวจว่าผู้เล่นตกลงจริง\n• กันโกงด้วยการดัก prompt injection และคำหยาบ ต้นทุนไม่เคยถูกส่งไปให้ผู้เล่นหรือโมเดล\n• โจทย์สุ่มใหม่ทุกวันและเหมือนกันทุกคน คิดคะแนนตามส่วนลดที่ได้ จบเกมได้การ์ดผลลัพธ์ไว้แชร์\n• โหมดคุยด้วยเสียง แม่ค้าแต่ละคนมีเสียงต่างกัน และพูดเร็วขึ้นเมื่อโมโห\n• ไม่มีคีย์ AI ก็เล่นได้ด้วยแม่ค้าจำลอง และมี unit test ครอบกรณีโกงราคา",
+        "en": "• Five merchants with five personalities, each softened and angered by different things: Auntie Sri melts at compliments, while Grandma Chan remembers every word and catches lies\n• The server, not the AI, decides prices: never below cost, a cap on each discount, and a check that the player really agreed\n• Guards against prompt injection and profanity; costs are never sent to the player or the model\n• A new daily challenge that is the same for everyone, scored by the discount you win, with a shareable result card\n• Voice mode where every merchant has their own voice and speaks faster when annoyed\n• Plays without an AI key using simulated merchants, with unit tests covering price-cheating cases"
+      },
+      "appUrl": "https://banter-with-merchants.vercel.app/",
+      "embed": true,
+      "date": "2026-10",
+      "status": "live",
+      "tags": [
+        "AI",
+        "Game design",
+        "Next.js",
+        "TypeScript",
+        "OpenRouter",
+        "Upstash Redis",
+        "Prompt engineering"
+      ],
+      "images": [
+        "images/w-banter-1.jpg",
+        "images/w-banter-2.jpg"
+      ],
+      "clip": "images/w-banter-clip.mp4"
+    },
+    {
+      "featured": false,
+      "org": "",
+      "people": "",
+      "credId": "",
+      "color": "",
+      "metrics": [],
+      "links": [],
+      "id": "w-magichands",
+      "cat": "app",
+      "title": {
+        "th": "มือเวท",
+        "en": "Magic Hands"
+      },
+      "role": {
+        "th": "ออกแบบและพัฒนา",
+        "en": "Design and build"
+      },
+      "summary": {
+        "th": "เกมบนเว็บที่ร่ายเวทด้วยท่ามือผ่านกล้องเว็บแคม ยิงลูกไฟ ชาร์จระเบิด กางโล่ และฟาดสายฟ้าใส่วิญญาณที่บุกเข้ามา ตรวจจับมือด้วย AI บนเครื่องผู้เล่นเอง ภาพไม่ถูกส่งออกไปไหน",
+        "en": "A browser game where you cast spells with hand gestures through your webcam: shoot fireballs, charge a blast, raise a shield and strike lightning at incoming spirits. Hand tracking runs on the player's device, so no video leaves it."
+      },
+      "details": {
+        "th": "• ตรวจจับมือ 2 ข้างแบบเรียลไทม์ด้วย MediaPipe แยกได้ 5 ท่า: ชี้นิ้ว กำมือ แบมือ ชูสองนิ้ว และแบสองมือ\n• ระบบกันกระตุก: กรองตำแหน่งมือให้นิ่ง และต้องเห็นท่าเดิมติดกัน 5 เฟรมก่อนนับ\n• เล่นในห้องแสงน้อยได้ ปรับความสว่างภาพก่อนส่งให้ AI และใช้ขอบจอเป็นไฟส่องมือ\n• ศัตรู 4 แบบ เวฟยากขึ้นเรื่อย ๆ และบอส 3 เฟสทุก 5 เวฟ มีคอมโบและเก็บสถิติสูงสุด\n• ภาพและเสียงสร้างด้วยโค้ดทั้งหมด ไม่มีไฟล์ภาพหรือเสียง อนุภาคหลายพันตัวที่ปรับคุณภาพตาม fps\n• ปุ่มอัดคลิป 10 วิไว้แชร์ และเล่นด้วยเมาส์หรือคีย์บอร์ดได้ถ้าไม่มีกล้อง",
+        "en": "• Real-time tracking of both hands with MediaPipe, recognising five gestures: point, fist, open palm, two fingers and both palms\n• Anti-jitter: smoothed hand positions, and a gesture must hold for five frames before it counts\n• Works in dim rooms by brightening the image before it reaches the AI and lighting your hands with the screen edge\n• Four enemy types, waves that keep getting harder and a three-phase boss every five waves, with combos and a high score\n• Every visual and sound is generated in code, with no image or audio files, and thousands of particles that scale with frame rate\n• A 10-second clip recorder for sharing, plus mouse and keyboard controls when there is no camera"
+      },
+      "appUrl": "https://magic-hands-six.vercel.app/",
+      "date": "2026-10",
+      "status": "live",
+      "tags": [
+        "AI",
+        "Game design",
+        "Computer vision",
+        "MediaPipe",
+        "PixiJS",
+        "TypeScript",
+        "Web Audio"
+      ],
+      "images": [
+        "images/w-magichands-1.jpg",
+        "images/w-magichands-2.jpg",
+        "images/w-magichands-3.jpg"
+      ]
     },
     {
       "id": "w-somchai",
